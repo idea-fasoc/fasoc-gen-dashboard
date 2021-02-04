@@ -8,38 +8,6 @@
 3. Install necessary dependencies:
     - **Via node `npm` package manager** - Run `npm install` on the project root
 
-## Configuration for PostgreSQL database and Redis data structure store
-
-##### Via Docker
-
-1. Install **Docker** on your machine
-2. Run `docker-compose up -d` in a terminal on the project root. This will start 3 containers:
-    - database(PostgreSQL) container;
-    - redis container - required for session management;
-    - haproxy container - required only for a staging/production setup;
-
-##### Via another chosen solution.
-
-1. Install your **PostgreSQL** database
-2. Install your **Redis** server
-3. Change connection configuration, from your root `cd` to `env-files` folder and change the following configurations with your own:
-
-###### **For PostgreSQL connection:**
-1. Database connection via URL
-```bash
-DATABASE_URL=http://<user>:<password>@<host>/<database_name>
-```
-2. Database connection via credentials
-```bash
-DATABASE_HOST=127.0.0.1
-DATABASE_PORT=5432
-DATABASE_NAME=test
-DATABASE_USER=test
-DATABASE_PASSWORD=test
-```
-
-
-
 ## Run the application
 
 1. For starting the application, the following script (defined in `package.json` under `scripts`) must be called:
