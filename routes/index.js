@@ -47,7 +47,10 @@ const uri = "mongodb+srv://admin:admin@clusterfasoc.hrzi9.mongodb.net/Fasoc?retr
 
 // connect to your MongoDB database through your URI. 
 // The connect() function takes a uri and callback function as arguments.
-MongoClient.connect(uri, (err, client) => {
+MongoClient.connect(uri,{
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}, (err, client) => {
   // connect to your specific collection (a.k.a database) that you specified at the end of your URI (/database)
   var db = client.db('Fasoc');
   const collection = db.collection("fasoc_DB");

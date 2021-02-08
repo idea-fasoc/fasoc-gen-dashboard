@@ -1,11 +1,11 @@
 {
-  "name": "argon-dashboard-nodejs",
-  "version": "1.0.1",
-  "private": false,
+  "name": "dashboard-nodejs",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Zineb Benameur",
   "scripts": {
     "pm2": "pm2",
     "gulp": "gulp",
-    "build": "npm install",
     "start": "node ./bin/www",
     "start:staging": "pm2 start",
     "dev": "concurrently \"pm2 start\" \"gulp\"",
