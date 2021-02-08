@@ -33,7 +33,19 @@
             });
             </script>
 
-              <form role="form" action="register" method="POST">
+<!-- TEST -->
+<!--           <form action="/register" method="post">
+            <label>Name</label>
+            <input type="text" name="name">
+              <br /> <br /> <br /> <br />
+            <label>Email</label>
+            <input type="text" name="email">
+              <br /> <br /> <br /> <br />
+            <button>submit</button>
+          </form> -->
+<!-- END TEST -->
+
+
                 <div class="text-center text-muted mb-4">
                   <medium>Select a Generator</medium>
                 </div>
@@ -48,26 +60,23 @@
                     <option value="mem">Memory</option>
                     <option value="temp">Temp Sensor</option>
                   </select>
-              </form>
+                </form>
             </br>
+            <form action="/register" method="post">
             <div id="mem">
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Module Name" type="text" required>
+                    <input class="form-control" name="Module Name" placeholder="Module Name" type="text" required>
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="text-center text-muted mb-4">
                   <medium>Simulation</medium>
@@ -80,44 +89,36 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="word_size" type="text" required>
+                    <input class="form-control" name="word_size" placeholder="word_size" type="text">
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="nowords" type="text" required>
+                    <input class="form-control" name="nowords" placeholder="nowords" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="op_vdd" type="text" required>
+                    <input class="form-control" name="op_vdd" placeholder="op_vdd" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="op_freq" type="text" required>
+                    <input class="form-control" name="op_freq" placeholder="op_freq" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
 
 
@@ -130,55 +131,45 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="area" type="text" required>
+                    <input class="form-control" name="area" placeholder="area" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="aspectratio" type="text" required>
+                    <input class="form-control" name="aspectratio" placeholder="aspectratio" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="power" type="text" required>
+                    <input class="form-control" name="power" placeholder="power" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="word_size" type="text" required>
+                    <input class="form-control" name="word_size" placeholder="word_size" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="nowords" type="text" required>
+                    <input class="form-control" name="nowords" placeholder="nowords" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
 
 
@@ -194,33 +185,27 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Input voltage" type="text" required>
+                    <input class="form-control" name="Input voltage" placeholder="Input voltage" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Clock Signal" type="text" required>
+                    <input class="form-control" name="Clock Signal" placeholder="Clock Signal" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Memory Inputs through PGLA" type="text" required>
+                    <input class="form-control" name="Memory Inputs through PGLA" placeholder="Memory Inputs through PGLA" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
 
 
@@ -234,88 +219,72 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Vmin" type="text" required>
+                    <input class="form-control" name="Vmin" placeholder="Vmin" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Operating Voltage range" type="text" required>
+                    <input class="form-control" name="Operating Voltage range" placeholder="Operating Voltage range" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Read access time" type="text" required>
+                    <input class="form-control" name="Read access time" placeholder="Read access time" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Write time" type="text" required>
+                    <input class="form-control" name="Write time" placeholder="Write time" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Energy/access" type="text" required>
+                    <input class="form-control" name="Energy_access" placeholder="Energy_access" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Leakage/bit" type="text" required>
+                    <input class="form-control" name="Leakage_bit" placeholder="Leakage_bit" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Read operation clock cycles" type="text" required>
+                    <input class="form-control" name="Read operation clock cycles" placeholder="Read operation clock cycles" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text"></span>
                     </div>
-                    <input class="form-control" name="name" placeholder="Write operation clock cycles" type="text" required>
+                    <input class="form-control" name="Write operation clock cycles" placeholder="Write operation clock cycles" type="text"  >
                   </div>
-                  <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                    <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                  <% } %>
+ 
                 </div>
 
                 <div class="text-center">
@@ -324,27 +293,24 @@
               </form>
             </div>
             </div>
+          </form>
 
 
-
+          <form action="/register" method="post">
             <div id="dcdc">
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Module Name" type="text" required>
+                  <input class="form-control" name="Module Name" placeholder="Module Name" type="text"  required>
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
+
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
+
               </div>
               <div class="text-center text-muted mb-4">
                 <medium>Simulation</medium>
@@ -357,44 +323,33 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Input voltage" type="text" required>
+                  <input class="form-control" name="Input voltage" placeholder="Input voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Output voltage" type="text" required>
+                  <input class="form-control" name="Output voltage" placeholder="Output voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
+
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Load current" type="text" required>
+                  <input class="form-control" name="Load current" placeholder="Load current" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Input clock frequency" type="text" required>
+                  <input class="form-control" name="Input clock frequency" placeholder="Input clock frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
               <div class="text-left text-muted mb-4">
@@ -405,33 +360,24 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="area" type="text" required>
+                  <input class="form-control" name="area" placeholder="area" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Output voltage" type="text" required>
+                  <input class="form-control" name="Output voltage" placeholder="Output voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Conversion efficiency" type="text" required>
+                  <input class="form-control" name="Conversion efficiency" placeholder="Conversion efficiency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
               <div class="text-center text-muted mb-4">
@@ -445,44 +391,32 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Output capacitance" type="text" required>
+                  <input class="form-control" name="Output capacitance" placeholder="Output capacitance" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Input voltage" type="text" required>
+                  <input class="form-control" name="Input voltage" placeholder="Input voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Load current" type="text" required>
+                  <input class="form-control" name="Load current" placeholder="Load current" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Input clock frequency" type="text" required>
+                  <input class="form-control" name="Input clock frequency" placeholder="Input clock frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
 
@@ -495,62 +429,50 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Output voltage" type="text" required>
+                  <input class="form-control" name="Output voltage" placeholder="Output voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Output ripple voltage" type="text" required>
+                  <input class="form-control" name="Output ripple voltage" placeholder="Output ripple voltage" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Conversion efficiency" type="text" required>
+                  <input class="form-control" name="Conversion efficiency" placeholder="Conversion efficiency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="text-center">
                 <button class="btn btn-primary mt-4">Add DCDC Generator</button>
               </div>
             </form>
           </div>
+          </form>
 
 
 
 
-
+        <form action="/register" method="post">
           <div id="temp">
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Module Name" type="text" required>
+                <input class="form-control" name="Module Name" placeholder="Module Name" type="text" required >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="text-center text-muted mb-4">
               <medium>Simulation</medium>
@@ -563,22 +485,18 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Temperature Range" type="text" required>
+                <input class="form-control" name="Temperature Range" placeholder="Temperature Range" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Input clock frequency" type="text" required>
+                <input class="form-control" name="Input clock frequency" placeholder="Input clock frequency" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
 
 
@@ -590,33 +508,26 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Inaccuracy" type="text" required>
+                <input class="form-control" name="Inaccuracy" placeholder="Inaccuracy" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Area" type="text" required>
+                <input class="form-control" name="Area" placeholder="Area" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Power" type="text" required>
+                <input class="form-control" name="Power" placeholder="Power" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
 
             <div class="text-center text-muted mb-4">
@@ -630,33 +541,24 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Temperature Range" type="text" required>
+                <input class="form-control" name="Temperature Range" placeholder="Temperature Range" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Result Code Precision" type="text" required>
+                <input class="form-control" name="Result Code Precision" placeholder="Result Code Precision" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Input clock frequency" type="text" required>
+                <input class="form-control" name="Input clock frequency" placeholder="Input clock frequency" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
 
 
@@ -668,73 +570,58 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Inaccuracy" type="text" required>
+                <input class="form-control" name="Inaccuracy" placeholder="Inaccuracy" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Conversion Time" type="text" required>
+                <input class="form-control" name="Conversion Time" placeholder="Conversion Time" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Energy per Conversion" type="text" required>
+                <input class="form-control" name="Energy per Conversion" placeholder="Energy per Conversion" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
+
             </div>
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"></span>
                 </div>
-                <input class="form-control" name="name" placeholder="Line Sensitivity" type="text" required>
+                <input class="form-control" name="Line Sensitivity" placeholder="Line Sensitivity" type="text"  >
               </div>
-              <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-              <% } %>
             </div>
             <div class="text-center">
               <button class="btn btn-primary mt-4">Add Temp Sensor Generator</button>
             </div>
           </form>
         </div>
+        </div>
+      </form>
 
 
 
 
-
+      <form action="/register" method="post">
             <div id="pll">
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Module Name" type="text" required>
+                  <input class="form-control" name="Module Name" placeholder="Module Name" type="text" required  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="text-center text-muted mb-4">
                 <medium>Simulation</medium>
@@ -747,67 +634,51 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="lower end of nominal frequency range
-                  " type="text" required>
+                  <input class="form-control" name="lower end of nominal frequency range" placeholder="lower end of nominal frequency range
+                  " type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="higher end of  nominal frequency range" type="text" required>
+                  <input class="form-control" name="higher end of  nominal frequency range" placeholder="higher end of  nominal frequency range" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
+
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="maximum frequency" type="text" required>
+                  <input class="form-control" name="maximum frequency" placeholder="maximum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="minimum frequency" type="text" required>
+                  <input class="form-control" name="minimum frequency" placeholder="minimum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="DCO power" type="text" required>
+                  <input class="form-control" name="DCO power" placeholder="DCO power" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
+
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="DCO frequency resolution" type="text" required>
+                  <input class="form-control" name="DCO frequency resolution" placeholder="DCO frequency resolution" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
 
@@ -820,66 +691,48 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="area" type="text" required>
+                  <input class="form-control" name="area" placeholder="area" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="nominal frequency" type="text" required>
+                  <input class="form-control" name="nominal frequency" placeholder="nominal frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="maximum frequency" type="text" required>
+                  <input class="form-control" name="maximum frequency" placeholder="maximum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="minimum frequency" type="text" required>
+                  <input class="form-control" name="minimum frequency" placeholder="minimum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="power" type="text" required>
+                  <input class="form-control" name="power" placeholder="power" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="DCO frequency resolution" type="text" required>
+                  <input class="form-control" name="DCO frequency resolution" placeholder="DCO frequency resolution" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
 
@@ -895,33 +748,24 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Reference clock" type="text" required>
+                  <input class="form-control" name="Reference clock" placeholder="Reference clock" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Power supply" type="text" required>
+                  <input class="form-control" name="Power supply" placeholder="Power supply" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="PLL Inputs through M0 debug mode" type="text" required>
+                  <input class="form-control" name="PLL Inputs through M0 debug mode" placeholder="PLL Inputs through M0 debug mode" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
 
 
@@ -935,7 +779,7 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="nominal frequency" type="text" required>
+                  <input class="form-control" name="nominal frequency" placeholder="nominal frequency" type="text"  >
                 </div>
                 <% if (locals.messages && messages.errors && messages.errors.name) { %>
                   <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
@@ -946,44 +790,32 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="Omaximum frequency" type="text" required>
+                  <input class="form-control" name="maximum frequency" placeholder="maximum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="minimum frequency" type="text" required>
+                  <input class="form-control" name="minimum frequency" placeholder="minimum frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="DCO power" type="text" required>
+                  <input class="form-control" name="DCO power" placeholder="DCO power" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text"></span>
                   </div>
-                  <input class="form-control" name="name" placeholder="area" type="text" required>
+                  <input class="form-control" name="area" placeholder="area" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               
 

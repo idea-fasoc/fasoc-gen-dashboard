@@ -6,8 +6,8 @@ const redirectToDashboard = require('./commands/redirect-to-dashboard');
 const loadPage = require('./commands/load-page');
 
 module.exports = router => {
-  router.post('/login', wrap(verifyRequestBody), wrap(login), wrap(redirectToDashboard));
-  router.get('/login', wrap(loadPage));
+  //router.post('/login', wrap(verifyRequestBody), wrap(login), wrap(redirectToDashboard));
+  //router.get('/login', wrap(loadPage));
 
   return router;
 };
