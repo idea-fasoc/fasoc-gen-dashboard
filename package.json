@@ -5,6 +5,7 @@
   "scripts": {
     "pm2": "pm2",
     "gulp": "gulp",
+    "build": "npm install",
     "start": "node ./bin/www",
     "start:staging": "pm2 start",
     "dev": "concurrently \"pm2 start\" \"gulp\"",

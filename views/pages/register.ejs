@@ -609,7 +609,7 @@
 
 
 
-      <form action="/register" method="post">
+          <form action="/register" method="post">
             <div id="pll">
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
@@ -781,9 +781,6 @@
                   </div>
                   <input class="form-control" name="nominal frequency" placeholder="nominal frequency" type="text"  >
                 </div>
-                <% if (locals.messages && messages.errors && messages.errors.name) { %>
-                  <strong class="invalid-feedback" style="display: block"><%= messages.errors.name %></strong>
-                <% } %>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
@@ -822,28 +819,8 @@
               <div class="text-center">
                 <button class="btn btn-primary mt-4">Add PLL Generator</button>
               </div>
+            </div>
             </form>
-          </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-        
-        </div>
       </div>
     </div>
   </div>
