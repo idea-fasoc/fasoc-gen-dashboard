@@ -1,19 +1,27 @@
-# [Fasoc Dashboard using Nodejs]
+# Fasoc Dashboard using Nodejs
 
 
 ## Installation
 
-1. You need `Node.js` (at least 10.x version) installed on your machine, if you don't have it, you should install it - download [link](https://nodejs.org/en/download/)
-2. `cd` to your downloaded  app
-3. Install necessary dependencies:
-    - **Via node `npm` package manager** - Run `npm install` on the project root
+1. You need `Node.js` (at least 10.x version) installed on your machine, if you don't have it, you should install it - download [link](https://nodejs.org/en/download/) or just simply run `conda install -c conda-forge nodejs`
+2. Install necessary dependencies:
+    - Run `npm install` on the project root
+    - You can easily check if npm is installed by running `npm --version`
 
 ## Run the application
 
 1. For starting the application, the following script (defined in `package.json` under `scripts`) must be called:
-    - via **npm**: `npm run start` or `npm run dev` for starting the development environment, which has livereload enabled;
+    - Please run `npm run start` or `npm run dev` for starting the development environment, which has livereload enabled;
+    - When the terminal is like this 
+    
+    ![](docs/database_terminal.png) 
+    
+    It means you can go to the next step which is: 
+    - Open up the browser (Chrome, Firefox, Safari, etc.) and write localhost:8000 as you can see an example here.
+    
+    ![](docs/database_browser.png)
 
-
+2. When you are done please press `Ctrl + c` to end the work in the terminal.
 ## Features
 
 In order to see the available features `cd` into `features` folder, and you will then find a folder for each of the available features, mostly each folder containing:
